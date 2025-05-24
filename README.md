@@ -37,3 +37,41 @@ credit-score-prediction-pro/
 │   └── scaler.pkl
 ├── data/
 │   └── accepted_2007_to_2018Q4.csv   # (Not uploaded - Download at: https://www.kaggle.com/datasets/wordsforthewise/lending-club/data)
+
+
+## Installation
+git clone https://github.com/Taytayket/CreditScorePredictionProject.git
+cd CreditScorePredictionProject
+
+pip install fastapi uvicorn streamlit pandas numpy scikit-learn joblib matplotlib
+
+
+## Usage
+Open API: uvicorn api:app --reload
+Open Streamlit: streamlit run app.py
+
+
+## Dataset
+This project uses the Lending Club Loan Data available on Kaggle. It contains detailed records of loan applications and repayment outcomes from 2007 to 2018, published by LendingClub.
+
+The dataset includes over 200 features, covering:
+	•	Loan details: loan_amnt, term, int_rate, installment, etc.
+	•	Borrower attributes: annual_inc, emp_length, home_ownership, purpose, etc.
+	•	Credit history: earliest_cr_line, open_acc, total_acc, dti, etc.
+	•	Loan outcome: loan_status (e.g., Fully Paid, Charged Off, Default)
+
+Processing:
+	•	The target variable loan_status is converted into a binary classification:
+	•	Fully Paid → 0 (Non-default)
+	•	Charged Off or Default → 1 (Default)
+	•	Only a subset of important features (around 15–20) is selected for modeling
+	•	Preprocessing includes missing value handling, feature engineering, label encoding, and log transformations
+
+⚠️Note:
+Due to the large size of the original dataset (~1.68 GB uncompressed), it is not included in this GitHub repo. However, all data processing logic is provided in the codebase.
+
+
+You can download the dataset directly from Kaggle:
+🔗 https://www.kaggle.com/datasets/wordsforthewise/lending-club/data
+
+Once downloaded, place the file accepted_2007_to_2018Q4.csv inside the data/ folder.
