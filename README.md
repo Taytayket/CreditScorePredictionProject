@@ -49,11 +49,11 @@ pip install fastapi uvicorn streamlit pandas numpy scikit-learn joblib matplotli
 
 
 ## Usage
-# Start FastAPI backend: 
+#Start FastAPI backend: 
 
 uvicorn api:app --reload
 
-# Open Streamlit frontend: 
+#Open Streamlit frontend: 
 
 streamlit run app.py
 
