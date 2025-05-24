@@ -49,8 +49,13 @@ pip install fastapi uvicorn streamlit pandas numpy scikit-learn joblib matplotli
 
 
 ## Usage
-Open API: uvicorn api:app --reload
-Open Streamlit: streamlit run app.py
+# Start FastAPI backend: 
+
+uvicorn api:app --reload
+
+# Open Streamlit frontend: 
+
+streamlit run app.py
 
 
 ## Dataset
