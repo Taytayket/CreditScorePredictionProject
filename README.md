@@ -25,6 +25,7 @@ The model predicts the **default probability** of a loan, and maps that to:
 ---
 
 ## Project Structure
+‘’‘
 credit-score-prediction-pro/
 ├── app.py                # Streamlit frontend
 ├── api.py                # FastAPI backend
@@ -37,7 +38,7 @@ credit-score-prediction-pro/
 │   └── scaler.pkl
 ├── data/
 │   └── accepted_2007_to_2018Q4.csv   # (Not uploaded - Download below)
-
+’‘’
 
 ## Installation
 git clone https://github.com/Taytayket/CreditScorePredictionProject.git
