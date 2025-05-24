@@ -27,15 +27,25 @@ The model predicts the **default probability** of a loan, and maps that to:
 ## Project Structure
 credit-score-prediction-pro/
 ├── app.py                 # Streamlit frontend
+
 ├── api.py                 # FastAPI backend
+
 ├── predict.py             # Scoring & explainability logic
+
 ├── train_model.py         # Custom logistic regression training script
+
 ├── data_process.py        # Data cleaning, encoding, feature engineering
+
 ├── data_pipeline.py       # ETL wrapper
+
 ├── models/
+
 │   ├── logistic_model.json
+
 │   └── scaler.pkl
+
 ├── data/
+
 │   └── accepted_2007_to_2018Q4.csv   # (Not uploaded - Download at: https://www.kaggle.com/datasets/wordsforthewise/lending-club/data)
 
 
