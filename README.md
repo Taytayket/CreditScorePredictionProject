@@ -59,7 +59,9 @@ uvicorn api:app --reload
 streamlit run app.py
 
 You can now access:
+
 	•	API docs: http://127.0.0.1:8000/docs
+ 
 	•	Streamlit UI: http://localhost:8501
  
 
