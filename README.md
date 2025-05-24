@@ -45,8 +45,7 @@ git clone https://github.com/Taytayket/CreditScorePredictionProject.git
 
 cd CreditScorePredictionProject
 
-pip install:
-fastapi, uvicorn, streamlit, pandas, numpy, scikit-learn, joblib, matplotlib
+pip install fastapi uvicorn streamlit pandas numpy scikit-learn joblib matplotlib
 
 
 ## Usage
