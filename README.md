@@ -58,6 +58,10 @@ uvicorn api:app --reload
 
 streamlit run app.py
 
+You can now access:
+	•	API docs: http://127.0.0.1:8000/docs
+	•	Streamlit UI: http://localhost:8501
+ 
 
 ## Dataset
 This project uses the Lending Club Loan Data available on Kaggle. It contains detailed records of loan applications and repayment outcomes from 2007 to 2018, published by LendingClub.
